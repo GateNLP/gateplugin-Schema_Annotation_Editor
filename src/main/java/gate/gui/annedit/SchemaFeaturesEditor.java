@@ -504,7 +504,7 @@ public class SchemaFeaturesEditor extends JPanel{
     }
     //add a vertical spacer
     constraints.weighty = 1;
-    constraints.gridy = gridy++;
+    constraints.gridy = gridy;
     constraints.gridx = GridBagConstraints.LINE_START;
     add(Box.createVerticalGlue(), constraints);
   }
