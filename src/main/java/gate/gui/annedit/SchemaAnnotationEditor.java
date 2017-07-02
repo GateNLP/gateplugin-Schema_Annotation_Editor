@@ -831,10 +831,10 @@ public class SchemaAnnotationEditor extends AbstractVisualResource implements
     @Override
     public void actionPerformed(ActionEvent evt) {
       int increment = 1;
-      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) > 0) {
+      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) != 0) {
         // CTRL pressed -> use tokens for advancing
         increment = SHIFT_INCREMENT;
-        if((evt.getModifiers() & ActionEvent.CTRL_MASK) > 0) {
+        if((evt.getModifiers() & ActionEvent.CTRL_MASK) != 0) {
           increment = CTRL_SHIFT_INCREMENT;
         }
       }
@@ -862,10 +862,10 @@ public class SchemaAnnotationEditor extends AbstractVisualResource implements
     public void actionPerformed(ActionEvent evt) {
       long endOffset = annotation.getEndNode().getOffset().longValue();
       int increment = 1;
-      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) > 0) {
+      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) != 0) {
         // CTRL pressed -> use tokens for advancing
         increment = SHIFT_INCREMENT;
-        if((evt.getModifiers() & ActionEvent.CTRL_MASK) > 0) {
+        if((evt.getModifiers() & ActionEvent.CTRL_MASK) != 0) {
           increment = CTRL_SHIFT_INCREMENT;
         }
       }
@@ -892,10 +892,10 @@ public class SchemaAnnotationEditor extends AbstractVisualResource implements
     public void actionPerformed(ActionEvent evt) {
       long startOffset = annotation.getStartNode().getOffset().longValue();
       int increment = 1;
-      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) > 0) {
+      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) != 0) {
         // CTRL pressed -> use tokens for advancing
         increment = SHIFT_INCREMENT;
-        if((evt.getModifiers() & ActionEvent.CTRL_MASK) > 0) {
+        if((evt.getModifiers() & ActionEvent.CTRL_MASK) != 0) {
           increment = CTRL_SHIFT_INCREMENT;
         }
       }
@@ -923,10 +923,10 @@ public class SchemaAnnotationEditor extends AbstractVisualResource implements
     public void actionPerformed(ActionEvent evt) {
       long maxOffset = owner.getDocument().getContent().size().longValue() - 1;
       int increment = 1;
-      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) > 0) {
+      if((evt.getModifiers() & ActionEvent.SHIFT_MASK) != 0) {
         // CTRL pressed -> use tokens for advancing
         increment = SHIFT_INCREMENT;
-        if((evt.getModifiers() & ActionEvent.CTRL_MASK) > 0) {
+        if((evt.getModifiers() & ActionEvent.CTRL_MASK) != 0) {
           increment = CTRL_SHIFT_INCREMENT;
         }
       }
