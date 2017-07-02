@@ -1211,32 +1211,32 @@ public class SchemaAnnotationEditor extends AbstractVisualResource implements
   private ComponentOrientation currentOrientation = null;
 
   /* various tool tips for buttons used for changing offsets */
-  private final String SOL_DESC = "<html><b>Extend start</b><small>"
+  private final static String SOL_DESC = "<html><b>Extend start</b><small>"
       + "<br>LEFT = 1 character" + "<br> + SHIFT = 5 characters, "
       + "<br> + CTRL + SHIFT = 10 characters</small></html>";
 
-  private final String SOR_DESC = "<html><b>Shrink start</b><small>"
+  private final static String SOR_DESC = "<html><b>Shrink start</b><small>"
       + "<br>RIGHT = 1 character" + "<br> + SHIFT = 5 characters, "
       + "<br> + CTRL + SHIFT = 10 characters</small></html>";
 
-  private final String EOL_DESC = "<html><b>Shrink end</b><small>"
+  private final static String EOL_DESC = "<html><b>Shrink end</b><small>"
       + "<br>ALT + LEFT = 1 character" + "<br> + SHIFT = 5 characters, "
       + "<br> + CTRL + SHIFT = 10 characters</small></html>";
 
-  private final String EOR_DESC = "<html><b>Extend end</b><small>"
+  private final static String EOR_DESC = "<html><b>Extend end</b><small>"
       + "<br>ALT + RIGHT = 1 character" + "<br> + SHIFT = 5 characters, "
       + "<br> + CTRL + SHIFT = 10 characters</small></html>";
 
   /* various shortcuts we define */
-  private final String[] SOL_KEY_STROKES = new String[]{"LEFT", "shift LEFT",
+  private final static String[] SOL_KEY_STROKES = new String[]{"LEFT", "shift LEFT",
       "control shift released LEFT"};
 
-  private final String[] SOR_KEY_STROKES = new String[]{"RIGHT", "shift RIGHT",
+  private final static String[] SOR_KEY_STROKES = new String[]{"RIGHT", "shift RIGHT",
       "control shift released RIGHT"};
 
-  private final String[] EOL_KEY_STROKES = new String[]{"LEFT", "alt LEFT",
+  private final static String[] EOL_KEY_STROKES = new String[]{"LEFT", "alt LEFT",
       "control alt released LEFT"};
 
-  private final String[] EOR_KEY_STROKES = new String[]{"RIGHT", "alt RIGHT",
+  private final static String[] EOR_KEY_STROKES = new String[]{"RIGHT", "alt RIGHT",
       "control alt released RIGHT"};
 }
