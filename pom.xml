@@ -16,6 +16,9 @@
 	<groupId>uk.ac.gate.plugins</groupId>
 	<artifactId>schema-annotation-editor</artifactId>
 	<version>8.5-SNAPSHOT</version>
+	
+	<name>Schema Annotation Editor</name>
+	<description>Uses XML Schemas to restrict the annotations/features that can be manually created</description>
 
 	<licenses>
 		<license>
